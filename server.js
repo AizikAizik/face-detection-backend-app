@@ -30,7 +30,7 @@ const app = express();
 app.use(bodyparser.json())
 app.use(cors())
 
-const port  = process.env.port || 3000;
+const PORT  = process.env.PORT || 3000;
 
 app.get("/", (req, res)=>{
         res.send("client connected succesfully")
@@ -49,7 +49,7 @@ app.put("/image", (req, res) => image.handleImage(req, res, DB))
 
 app.post("/imageURL", (req, res) => image.handleAPICall(req, res))
 
-app.listen(port, () =>{
+app.listen(PORT, () =>{
         console.log(`app is running on port : ${port}`);
 })
 
