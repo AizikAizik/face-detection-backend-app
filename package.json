@@ -1,0 +1,24 @@
+{
+  "name": "face-detection-backend",
+  "version": "1.0.0",
+  "description": "backend api for client face detection app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isaac Ogunleye",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "pg": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
