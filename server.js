@@ -25,8 +25,8 @@ DB.select("*").from('users').then(data => {
 
 const app = express();
 
-app.use(bodyparser.json())
 app.use(cors())
+app.use(bodyparser.json())
 
 const PORT  = process.env.PORT || 3000;
 
